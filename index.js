@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/',(req, res) => {
-    res.status(411).send({msg:'Basic API endpoint'});
+    res.status(200).send({msg:'Basic API endpoint'});
 })
 
 app.use('/api',userRouter);
